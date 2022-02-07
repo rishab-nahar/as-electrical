@@ -1,4 +1,4 @@
-# This is a website for AS Electrical
+# This is a website for AS Electricals
 
 # Getting Started with Create React App
 
