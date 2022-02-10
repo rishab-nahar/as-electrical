@@ -16,11 +16,12 @@ import Error from "./pages/Error";
 // import components
 import Navbar from "./components/Navbar";
 import ContactDiv from "./components/ContactDiv";
-
+import Sidebar from "./Sidebar";
 function App() {
   return (
     <Router>
       <Navbar />
+      <Sidebar></Sidebar>
       <Switch>
         <Route exact path="/">
           <Home />
@@ -31,14 +32,12 @@ function App() {
         <Route path="/products">
           <Products />
         </Route>
-        <Route path="/testimonial">
+        <Route path="/reviews">
           <Testimonial />
         </Route>
-        <Route path="/contact">
-          <ContactUs />
-        </Route>
+
         <Route path="*">
-          <Error />
+          <Home />
         </Route>
       </Switch>
       <ContactDiv></ContactDiv>

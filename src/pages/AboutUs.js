@@ -1,7 +1,5 @@
 import React from "react";
 import AboutPageDiv from "./../components/AboutpageDiv";
-import { Address, phone_number, landline_number, email } from "./../Details";
-import { NavLink } from "react-router-dom";
 import logo from "./../images/download.svg";
 
 const AboutUs = () => {

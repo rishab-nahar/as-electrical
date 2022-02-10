@@ -1,9 +1,9 @@
 import React from "react";
-
+import Reviews from "./../components/Reviews";
 const Testimonial = () => {
   return (
-    <div>
-      <h2>Testimonial page</h2>
+    <div className="largePadding">
+      <Reviews></Reviews>
     </div>
   );
 };

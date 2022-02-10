@@ -2,8 +2,10 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import logo from "./../images/download.svg";
 import ContactCard from "./ContactCard";
-
+import { FaBars } from "react-icons/fa";
+import { useGlobalContext } from "./../context";
 export default function Navbar() {
+  const { openSidebar } = useGlobalContext();
   return (
     <nav className="navbar">
       <div className="nav-center">
@@ -11,6 +13,11 @@ export default function Navbar() {
         <NavLink to="/">
           <img src={logo} alt="AS Electrical" className="logo" />
         </NavLink>
+        <div className="nav-header">
+          <button className="btn toggle-btn" onClick={openSidebar}>
+            <FaBars />
+          </button>
+        </div>
         <ul className="nav-links">
           <li>
             <NavLink to="/">
@@ -28,13 +35,8 @@ export default function Navbar() {
             </NavLink>
           </li>
           <li>
-            <NavLink to="/testimonial">
-              <div className="link-btn">testimonial</div>
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/contact">
-              <div className="link-btn">ContactUs</div>
+            <NavLink to="/reviews">
+              <div className="link-btn">Reviews</div>
             </NavLink>
           </li>
         </ul>

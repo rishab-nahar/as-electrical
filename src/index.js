@@ -4,11 +4,13 @@ import App from "./App";
 import "./../node_modules/font-awesome/css/font-awesome.min.css";
 import "./index.css";
 import "./../node_modules/bootstrap/dist/css/bootstrap.css";
-
+import { AppProvider } from "./context";
 import reportWebVitals from "./reportWebVitals";
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <AppProvider>
+      <App />
+    </AppProvider>
   </React.StrictMode>,
   document.getElementById("root")
 );
